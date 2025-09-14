@@ -1,0 +1,5 @@
+# dossier ou fichier a ignorer
+vendor/
+Frontend/
+composer.lock
+composer.json
