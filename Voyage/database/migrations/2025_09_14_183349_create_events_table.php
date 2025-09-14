@@ -17,8 +17,6 @@ return new class extends Migration
             $table->string('title');
             $table->string('description');
             $table->string('location');
-            $table->time('created_at')->nullable();
-            $table->time('updated_at')->nullable();
         });
     }
 

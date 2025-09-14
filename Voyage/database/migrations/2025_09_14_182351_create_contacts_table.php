@@ -15,8 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('email')->unique();
-            $$table->string('message');
-            $table->time('created_at')->nullable();
+            $table->string('message');
         });
     }
 

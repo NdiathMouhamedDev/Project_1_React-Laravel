@@ -17,7 +17,6 @@ return new class extends Migration
             $table->foreignId('event_id')->constrained()->onDelete('cascade');
             $table->foreignId('user_id')->constrained();
             $table->string('status'); // inscrit, en attente, annulé
-            $table->time('created_at')->nullable(); //date d'inscription à l'événement
             $table->unique(['user_id', 'event_id']); // Un utilisateur ne peut s'inscrire qu'une seule fois à un événement
         });
     }
